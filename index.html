@@ -4,49 +4,18 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Homepage CRUD-EC</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <link rel="stylesheet" href="styles/styles.css">
 </head>
 <body>
   <div class="container">
     <h1>Library Management System</h1>
 
-    <div class="card">
-      <div class="card-header">
-        <i class="fas fa-plus-circle"></i> Add New Book
-      </div>
-      <div class="card-body">
-        <form id="book-form">
-          <div class="form-group">
-            <label for="title">Book Title</label>
-            <div class="input-group">
-              <i class="fas fa-book"></i>
-              <input type="text" id="title" placeholder="Enter the title" required>
-            </div>
-          </div>
-          
-          <div class="form-group">
-            <label for="author">Author</label>
-            <div class="input-group">
-              <i class="fas fa-user-edit"></i>
-              <input type="text" id="author" placeholder="Enter the author" required>
-            </div>
-          </div>
-          
-          <div class="form-group">
-            <label for="description">Description</label>
-            <div class="input-group">
-              <i class="fas fa-align-left"></i>
-              <textarea id="description" placeholder="Enter the description"></textarea>
-            </div>
-          </div>
-          
-          <div class="button-group">
-            <button type="submit"><i class="fas fa-save"></i> Add Book</button>
-          </div>
-        </form>
-      </div>
-    </div>
+    <form id="book-form">
+      <input type="text" id="title" placeholder="Enter the title" required>
+      <input type="text" id="author" placeholder="Enter the author" required>
+      <textarea id="description" placeholder="Enter the description"></textarea>
+      <button type="submit">Add Book</button>
+    </form>
 
     <div class="table-wrapper">
       <table id="books-table">
@@ -58,9 +27,7 @@
             <th>Actions</th>
           </tr>
         </thead>
-        <tbody>
-          <!-- Table content will be populated by JavaScript -->
-        </tbody>
+        <tbody></tbody>
       </table>
     </div>
   </div>
