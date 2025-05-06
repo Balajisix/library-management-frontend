@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Homepage CRUD-EC</title>
+  <link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Library Management System</h1>
+
+    <form id="book-form">
+      <input type="text" id="title" placeholder="Enter the title" required>
+      <input type="text" id="author" placeholder="Enter the author" required>
+      <textarea id="description" placeholder="Enter the description"></textarea>
+      <button type="submit">Add Book</button>
+    </form>
+
+    <div class="table-wrapper">
+      <table id="books-table">
+        <thead>
+          <tr>
+            <th>Title</th>
+            <th>Author</th>
+            <th>Description</th>
+            <th>Actions</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </div>
+  </div>
+  <script src="scripts/script.js"></script>
+</body>
+</html>
